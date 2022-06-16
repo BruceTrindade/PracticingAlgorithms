@@ -1,5 +1,3 @@
-package com.example.metalball
-
 import java.util.Scanner
 
 fun main() {
@@ -20,6 +18,6 @@ fun operation(cc: String, aa: Double, bb: Double) {
         "/" -> result = aa / bb
         "*" -> result = aa * bb
     }
-    if (cc == "/")  return println(result)
-    else return  println("${String.format("%.0f",result)}")
+    if (cc == "/")  return println(String.format("%.1f",result))
+    else return  println(String.format("%.0f",result))
 }
