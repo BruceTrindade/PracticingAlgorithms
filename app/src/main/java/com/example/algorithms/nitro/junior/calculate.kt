@@ -2,16 +2,22 @@ import java.util.Scanner
 
 fun main() {
     val reader = Scanner(System.`in`)
-    var n = reader.nextInt()
-    var s = 0
+    val c = reader.next()
+    val a = reader.nextDouble()
+    val b = reader.nextDouble()
 
-    while (n > 1) {
-        n--
-        val l = reader.nextInt()
-        val c = reader.nextInt()
-        if(l > c) s += c
+    operation(c,a,b)
+
+}
+
+fun operation(cc: String, aa: Double, bb: Double) {
+    var result = 0.0
+    when (cc) {
+        "+" -> result = aa + bb
+        "-" -> result = aa - bb
+        "/" -> result = aa / bb
+        "*" -> result = aa * bb
     }
-
-    println(s)
-
+    if (cc == "/")  return println("${String.format("%.1f",result)}")
+    else return  println("${String.format("%.0f",result)}")
 }
