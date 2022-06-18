@@ -1,3 +1,5 @@
+package com.example.algorithms.nitro.midlevel
+
 import java.util.Scanner
 
 fun main() {
