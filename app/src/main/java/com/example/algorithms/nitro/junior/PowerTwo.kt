@@ -4,13 +4,19 @@ import java.util.Scanner
 
 fun main() {
     val reader = Scanner(System.`in`)
-    var n = reader.nextInt()
-    var r = 2
+    val n = reader.nextInt()
 
-    while(n > 1) {
-        n--
-        r =+ r * 2
-    }
-    println(r)
+    println(powerOf(n,2))
 
 }
+
+fun powerOf(number: Int, exponent: Int): Int {
+    var c = number
+    var r = exponent
+    while (c > 1) {
+        c--
+        r =+r  * exponent
+    }
+    return r
+}
+
