@@ -31,7 +31,7 @@ saida 2
 fun main() {
     val reader = Scanner(System.`in`)
     var count = 0
-    var turma = 0
+    var turma = 1
     var primeiroNumero = 0
     var segundoNumero = 0
     var terceiroNumero = 0
