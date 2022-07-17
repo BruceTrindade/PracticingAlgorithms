@@ -21,7 +21,6 @@ fun main() {
     val studentWithRealObject: Any? = Student()
 
     if (studentWithRealObject is Student){
-        studentWithRealObject as Student
         println("Student name: ${studentWithRealObject.name}")
         println("Student age: ${studentWithRealObject.age}")
     }

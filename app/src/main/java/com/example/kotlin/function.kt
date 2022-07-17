@@ -4,9 +4,10 @@ import java.util.*
 
 
 fun main() {
-  //  println(test())
-    address("rua", 12, 41340, null, "abc")
-//    address(road = "rua", cep = 41340, number = 12, complement =  "abc")
+    test()
+
+  //  address("rua", 12, 41340, null, "abc")
+ //   address(road = "rua", cep = 41340, number = 12, complement =  "abc")
 }
 
 fun test(
