@@ -9,7 +9,6 @@ fun main() {
     val t = reader.nextInt()
     val sum = arrayint.sum()
 
-    if(t == sum) println("Acertou")
+    if (t == sum) println("Acertou")
     else println("Errou")
-
 }
