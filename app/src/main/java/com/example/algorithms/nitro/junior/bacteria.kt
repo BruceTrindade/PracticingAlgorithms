@@ -15,8 +15,6 @@ fun main() {
         if(resultado > tt) {
             finalQ = count2
         }
-        println(count2)
-        println(resultado)
         tt = resultado
         count--
         count2++
