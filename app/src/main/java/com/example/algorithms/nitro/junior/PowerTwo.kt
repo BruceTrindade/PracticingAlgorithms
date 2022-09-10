@@ -1,22 +1,30 @@
 package com.example.algorithms
 
 import java.util.Scanner
+import kotlin.math.exp
 
 fun main() {
     val reader = Scanner(System.`in`)
-    val n = reader.nextInt()
-
-    println(powerOf(n,2))
+    val base = reader.nextInt()
+    val expoente = reader.nextInt()
+    var ex = expoente
+    var r  = 1
+    while (ex != 0) {
+        r *= base
+        ex--
+    }
+    println(r)
+   // println(powerOf(n,e)) 32
 
 }
 
 fun powerOf(number: Int, exponent: Int): Int {
     var c = number
     var r = exponent
-    while (c > 1) {
-        c--
-        r =+r  * exponent
+    while (r > 1) {
+        r--
+        c += c  * number
     }
-    return r
+    return c
 }
 
