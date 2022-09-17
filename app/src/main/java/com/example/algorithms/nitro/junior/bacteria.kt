@@ -1,37 +1,30 @@
 package com.example.algorithms.nitro.junior
-import java.lang.Math.log
-import java.lang.Math.pow
+
 import java.util.Scanner
 import kotlin.math.ln
-import kotlin.math.log
-import kotlin.math.pow
 
 fun main() {
     val reader = Scanner(System.`in`)
     val n = reader.nextInt()
     var count = n
-    var tt = 1.0
-    var finalQ = 1
-    var count2 = 0
+    var comparatorBact = 1.0
+    var betterBact = 1
+    var position = 0
     while (count != 0) {
         val base = reader.nextInt().toDouble()
-        val expoente = reader.nextInt()
-      //  val resultado = potencia(base, expoente)
-       // val resultado1 = pow(base, expoente)
-        val resultado1 = expoente * ln(base)
-        if(resultado1 > tt) {
-            finalQ = count2
+        val exponent = reader.nextInt()
+        val resultado1 = exponent * ln(base)
+        if (resultado1 > comparatorBact) {
+            betterBact = position
         }
-        tt = resultado1
+        if (comparatorBact < resultado1) comparatorBact = resultado1
         count--
-        count2++
-
+        position++
     }
-
-    println(finalQ)
-
+    println(betterBact)
 }
 
+/*
 fun potencia(b: Int, e: Int): Double {
     var ex = e
     var r: Double = 1.0
@@ -41,6 +34,7 @@ fun potencia(b: Int, e: Int): Double {
     }
     return r
 }
+*/
 
 /*
 import java.util.Scanner
