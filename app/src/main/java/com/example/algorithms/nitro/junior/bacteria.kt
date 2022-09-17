@@ -1,5 +1,10 @@
 package com.example.algorithms.nitro.junior
+import java.lang.Math.log
+import java.lang.Math.pow
 import java.util.Scanner
+import kotlin.math.ln
+import kotlin.math.log
+import kotlin.math.pow
 
 fun main() {
     val reader = Scanner(System.`in`)
@@ -9,13 +14,15 @@ fun main() {
     var finalQ = 1
     var count2 = 0
     while (count != 0) {
-        val base = reader.nextInt()
+        val base = reader.nextInt().toDouble()
         val expoente = reader.nextInt()
-        val resultado = potencia(base, expoente)
-        if(resultado > tt) {
+      //  val resultado = potencia(base, expoente)
+       // val resultado1 = pow(base, expoente)
+        val resultado1 = expoente * ln(base)
+        if(resultado1 > tt) {
             finalQ = count2
         }
-        tt = resultado
+        tt = resultado1
         count--
         count2++
 
