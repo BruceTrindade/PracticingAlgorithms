@@ -7,6 +7,6 @@ fun main() {
     val n = reader.nextInt()
     var arrayint = Array<Int>(n) { reader.nextInt() }
 
-    println("${arrayint.reversed().toString().replace("[", "").replace("]", "").replace(",","")}")
+    println(arrayint.reversed().toString().replace("[", "").replace("]", "").replace(",",""))
 
 }
