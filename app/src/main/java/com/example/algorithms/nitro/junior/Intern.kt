@@ -41,9 +41,9 @@ fun main() {
 
     do {
         n = reader.nextInt()
-        var code = Array<Int?>(n) { null }
-        var note = Array<Int?>(n) { null }
-        var c = Array<Int?>(n) { null }
+        val code = Array<Int>(n) { 0 }
+        val note = Array<Int>(n) { 0 }
+        val c = Array<Int>(n) { 0 }
 
         while (x < n) {
             code[x] = reader.nextInt()
@@ -52,18 +52,18 @@ fun main() {
         }
 
         while (count < n) {
-            primeiroNumero = code[count]!!
-            segundoNumero = note[count]!!
-            if((count + 1) != n) terceiroNumero = note[count+1]!!
+            primeiroNumero = code[count]
+            segundoNumero = note[count]
+            if ((count + 1) != n) terceiroNumero = note[count + 1]
             if (segundoNumero >= terceiroNumero) {
                 c[count] = primeiroNumero
-                conta = segundoNumero
             }
             count++
         }
         count = 0
         println("\nTurma ${turma++}")
-        println(c.filterNotNull().toString().replace("[", "").replace("]", "").replace(",","") + "\n")
+        val teste = c.toMutableList()
+        println(teste.toString().replace("[", "").replace("]", "").replace(",","") + "\n")
 
 
     } while (n != 0)
