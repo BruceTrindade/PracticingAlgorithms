@@ -1,4 +1,4 @@
-package com.example.algorithms.nitro.junior
+package com.example.algorithms.exercises.junior
 
 import java.util.Scanner
 

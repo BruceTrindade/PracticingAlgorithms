@@ -1,4 +1,4 @@
-package com.example.algorithms.nitro.midlevel
+package com.example.algorithms.exercises.midlevel
 
 import java.util.Scanner
 
