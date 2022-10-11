@@ -5,21 +5,15 @@ import java.util.Scanner
 fun main() {
     val reader = Scanner(System.`in`)
     val n = reader.nextInt()
-    val arrInt = Array<Int>(n) { reader.nextInt() }
+    val mlInt = MutableList(n) { reader.nextLong() }
     val m = reader.nextInt()
-    val arrMs = Array<Int>(m) { reader.nextInt() }
-    val t = arrInt.toMutableList()
+    val mlMs = MutableList(m) { reader.nextLong() }
 
-    for (i in arrMs.indices) {
-        t.remove(arrMs[i])
+    for (i in mlMs.indices) {
+        mlInt.remove(mlMs[i])
     }
 
-//    for (i in t.indices) {
-//        println("${t[i]} ")
-//    }
-
-    println(t.toString().replace("[", "").replace("]", "").replace(",",""))
-
+    println(mlInt.toString().replace("[", "").replace("]", "").replace(",", ""))
 }
 
 /*
